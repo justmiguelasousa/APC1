@@ -1,0 +1,46 @@
+TESTES - Atividade 03C - Painel de Senhas
+Compilacao: gcc painel_senhas.c -std=c99 -Wall -Wextra -o painel  
+ 
+Cenario 1 - Opcao 1, sequencia 4 -2 7 8 0
+  Entrada : 1, 4, -2, 7, 8, 0
+  Saida   : Atendidas : 3 | Ignoradas : 1 | Pares : 2
+ 
+Cenario 2 - Opcao 1, primeira senha 0 (while nao executa)
+  Entrada : 1, 0
+  Saida   : Atendidas : 0 | Ignoradas : 0 | Pares : 0
+ 
+Cenario 3 - Opcao 2, passo positivo
+  Entrada : 2, Inicio 2, Fim 10, Passo 2
+  Saida   : Chamadas: 2 4 6 8 10
+ 
+Cenario 4 - Opcao 2, passo negativo
+  Entrada : 2, Inicio 10, Fim 1, Passo -3
+  Saida   : Chamadas: 10 7 4 1
+ 
+Cenario 5 - Opcao 2, passo 0
+  Entrada : 2, Inicio 1, Fim 5, Passo 0
+  Saida   : Passo invalido
+ 
+Cenario 6 - Opcao 2, for sem execucao
+  Entrada : 2, Inicio 10, Fim 1, Passo 2
+  Saida   : Nenhuma chamada
+ 
+Cenario 7 - Opcao 3, grade valida
+  Entrada : 3, G 2, S 3
+  Saida   : Guiche 1: 1 2 3 / Guiche 2: 1 2 3
+ 
+Cenario 8 - Opcao 3, grade invalida
+  Entrada : 3, G 5, S 3
+  Saida   : Grade invalida
+ 
+Cenario 9 - Opcao 4, encontra prioritaria
+  Entrada : 4, senhas 4, 7, 20
+  Saida   : Prioritaria : 20 | Lidas antes : 2
+ 
+Cenario 10 - Opcao 4, zero encerra sem prioridade
+  Entrada : 4, senhas 3, 5, 0
+  Saida   : Nao encontrada | Lidas : 2
+ 
+Cenario 11 - Opcao invalida e encerramento
+  Entrada : 9, 0
+  Saida   : Opcao invalida (menu volta) ... Painel encerrado.

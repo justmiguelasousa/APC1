@@ -1,0 +1,23 @@
+CENARIO 1 - Faixa A, nota alta, pontual
+Entrada : Miguel Alves| 20 | 1800.00 | 8.8 | S
+Esperado: Faixa A | Base 50.0% | Bonus 5.0% | Total 55.0% | APROVADO PARA BOLSA
+
+CENARIO 2 - Faixa B, pontualidade 'N'
+Entrada : Miguel Sousa | 22 | 3500.00 | 8.7 | N
+Esperado: Faixa B | Base 10.0% | Bonus 0.0% | Total 10.0% | APROVADO PARA BOLSA
+
+CENARIO 3 - Faixa C, nota alta, pontual
+Entrada : Rafael Alves | 25 | 7200.00 | 9.6 | S
+Esperado: Faixa C | Base 10.0% | Bonus 5.0% | Total 15.0% | APROVADO PARA BOLSA
+
+CENARIO 4 - Faixa C, nota baixa, nao pontual
+Entrada : Rafael Sousa | 30 | 6000.00 | 7.0 | N
+Esperado: Faixa C | Base 0.0% | Bonus 0.0% | Total 0.0% | SEM DESCONTO
+
+CENARIO 5 - Dados invalidos (idade menor que 16)
+Entrada : Cleitinho | 15 | 2500.00 | 9.0 | S
+Esperado: ERRO: dados invalidos. Analise encerrada.
+
+CENARIO 6 - Dados invalidos (renda <= 0)
+Entrada : Lucas Paqueta | 19 | 0 | 8.0 | S
+Esperado: ERRO: dados invalidos. Analise encerrada.
